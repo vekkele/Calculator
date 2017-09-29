@@ -1,0 +1,37 @@
+html(lang="ru")
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    - var styles = ["main.css"]
+    each style in styles
+      link(rel="stylesheet" href="/project/css/" + style)
+  body
+    .calculator
+      input#input(type="text" disabled)
+      .buttons 
+        button(value="CA") CA
+        button(value="C") C
+        button(value="/") &divide;
+        button(value="*") x
+        button(value="7") 7
+        button(value="8") 8
+        button(value="9") 9
+        button(value="-") -
+        button(value="4") 4
+        button(value="5") 5
+        button(value="6") 6
+        button(value="+") +
+        button(value="1") 1
+        button(value="2") 2
+        button(value="3") 3
+        button.invisible N
+        button#zero(value="0") 0
+        button(value=".") .
+        button#equal(value="=") =
+
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+
+  
+
+          
+      
